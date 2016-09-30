@@ -19,6 +19,7 @@ ENV JAVA_OPTS="-Xmx8192m"
 #ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300"
 #ENV JENKINS_UC_DOWNLOAD="https://updates.jenkins-ci.org/download"
 
+RUN install-plugins.sh multiple-scms
 RUN install-plugins.sh git:2.6.0
 RUN /usr/local/bin/install-plugins.sh amazon-ecr
 RUN /usr/local/bin/install-plugins.sh docker-workflow
