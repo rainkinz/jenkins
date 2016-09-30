@@ -11,7 +11,7 @@ RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 USER jenkins
 
-RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
+# RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 
 # COPY plugins.txt /usr/share/jenkins/plugins.txt
 # RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
