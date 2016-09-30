@@ -23,8 +23,8 @@ RUN install-plugins.sh git:2.6.0
 RUN /usr/local/bin/install-plugins.sh amazon-ecr
 RUN /usr/local/bin/install-plugins.sh docker-workflow
 RUN /usr/local/bin/install-plugins.sh copyartifact
-RUN /usr/local/bin/install-plugins.sh templateproject
+# RUN /usr/local/bin/install-plugins.sh templateproject
 RUN /usr/local/bin/install-plugins.sh logparser
-RUN /usr/local/bin/install-plugins.sh workflowaggregator
-RUN /usr/local/bin/install-plugins.sh workflowmultibranch
+#RUN /usr/local/bin/install-plugins.sh workflowaggregator
+#RUN /usr/local/bin/install-plugins.sh workflowmultibranch
 
