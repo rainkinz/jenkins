@@ -16,8 +16,8 @@ RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 # COPY plugins.txt /usr/share/jenkins/plugins.txt
 # RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 ENV JAVA_OPTS="-Xmx8192m"
-ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300"
-ENV JENKINS_UC_DOWNLOAD="https://updates.jenkins-ci.org/download"
+#ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300"
+#ENV JENKINS_UC_DOWNLOAD="https://updates.jenkins-ci.org/download"
 
 RUN install-plugins.sh git:2.6.0
 RUN /usr/local/bin/install-plugins.sh amazon-ecr
